@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <title>conta</title>
+    <style>
+        body{
+            font-size: 30px;
+            background-image: linear-gradient(to left ,rgb(245, 123, 131), rgb(238, 36, 97), rgb(255, 8, 0));
+        }
+        div{
+            text-align: center;
+            background-color: white;
+            border: 3px solid black;
+            border-radius: 15px;
+        }
+
+       button{
+        font-size: 20px;
+        width: 200px;
+        background-color: rgb(181, 5, 5);
+        border: 5px solid rgb(213, 6, 96);
+        border-radius: 20px;
+        color: white;
+       }
+
+       ol{
+        list-style: none;
+       }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>calculos</h1>
+        <ol>
+            <li>adultos = 30</li>
+            <li>criaças = 40</li>
+            <li>grama por adulto = 400g</li>
+            <li>grama por criança = 200g</li>
+        </ol>
+        <p>quanto de carne vou comprar?</p>
+        <button onclick="calcular()">calcular</button>
+    </div>
+    <script>
+        var adult=30;
+        var criança=40;
+        var grama_c =0.200;
+        var grama_a=0.400;
+        var calculo=adult * grama_a + criança * grama_c;
+        var peso= "kg";
+        var total= calculo + peso; 
+
+        function calcular(){
+            alert(total);
+        }
+    </script>
+</body>
+</html>

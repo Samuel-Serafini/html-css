@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sorveteria</title>
+  <style>
+  
+  @keyframes fundo{
+    0%{background-color:rgb(207, 104, 0);}
+    25%{background-color:rgb(131, 11, 11) ;}
+    50% {background-color:rgb(49, 1, 74);}
+    75%{background-color: rgb(165, 4, 125);}
+    100%{background-color: rgb(255, 0, 89);}
+  }
+  
+    body{
+      background-color: rgb(181, 157, 82);
+      animation-name:fundo;
+      animation-duration:10s;
+      animation-delay:2s;
+      animation-iteration-count:infinite;
+      
+    }
+    
+    .tabela{
+      color: rgb(0, 0, 0);
+      margin:auto;
+      background-color: gold;
+      font-size:35px;
+      text-shadow:1px 1px 2px rgb(170, 7, 124);
+    }
+     h1{
+        font-family:Arial, Helvetica, sans-serif ;
+        font-size: 100px;
+        margin: auto;
+        text-align: center;
+        color: gold;
+        text-shadow: 10px 10px 20px rgb(255, 0, 132);
+     }
+
+     div{
+      
+        text-align: center;
+        margin: auto;
+       
+     }
+    
+  </style>
+
+</head>
+
+<body>
+
+    <script>
+        var vendidos_dia= 105.00 + 45 + 139.60 + 39.90 + 135.00 + 69.98 + 45.00 + 90.00 + 45.00 + 185.00 ;
+      
+        function vendidos(){
+          alert(vendidos_dia)
+         
+        }
+        var quantidade= 3 + 1 + 4 + 1 + 3 + 2 + 1 + 2 + 1 + 5 ;
+      
+        function quantidade_sorvete(){
+          alert(quantidade)
+          
+        }
+        var chocolate= 3 + 2 + 2 ;  
+      
+        function choco(){
+          alert(chocolate)
+          
+        }
+        var cremes= 1 + 3 + 1  ;
+      
+        function creme(){
+          alert(cremes)
+         
+        }
+        var morangos= 4 + 1;
+      
+        function morango(){
+          alert(morangos)
+          
+        }
+        var napoli=1 + 1 + 2;
+      
+      function napo(){
+          alert(napoli);
+     
+      }
+
+        var flocos=2;
+      
+      function floc(){
+          alert(flocos);
+     
+      }
+</script>
+    
+   <h1>SAMUK <br> ICE CREAM</h1>
+
+    <table class="tabela" border="10
+    ">
+        <tr>
+            <th>Clientes</th>
+            <th>quantidades</th>
+            <th>sabor</th>
+            <th>valor</th>
+            <th>total</th>
+           
+        </tr>
+        
+        <tr>
+            <td>Pedro</td>
+            <td> TRÊS </td>
+            <td>chocolate</td>
+            <td>R$ 35.00</td>
+            <td>R$ 105.00</td>
+          
+        </tr>
+        
+        <tr>
+            <td>Vitor</td>
+            <td> UM</td>
+            <td> Creme</td>
+            <td>R$ 45.00</td>
+            <td>R$ 45.00</td>
+          
+        </tr>
+        
+        <tr>
+            <td>Emily</td>
+            <td>QUATRO</td>
+            <td>Morango</td>
+            <td>R$ 34.90</td>
+            <td>R$ 139,60</td>
+           
+        </tr>
+        
+        <tr>
+            <td>Isabely</td>
+            <td>UM </td>
+            <td> Morango</td>
+            <td>R$ 39,90</td>
+            <td>R$ 39.90</td>
+            
+        </tr>
+        
+        <tr>
+            <td>Bruno</td>
+            <td>TRÊS</td>
+            <td>Creme</td>
+            <td>R$ 45.00</td>
+            <td>R$ 135.00</td>
+          
+        </tr>
+        
+        <tr>
+            <td>Caio</td>
+            <td>DOIS </td>
+            <td> Chocolate</td>
+            <td>R$ 34.99</td>
+            <td>R$ 69.98</td>
+          
+        </tr>
+        
+        <tr>
+            <td>Maria</td>
+            <td>Um</td>
+            <td>Creme</td>
+            <td>R$ 45.00</td>
+            <td>R$ 45.00</td>
+            
+        </tr>
+
+        <tr>
+            <td>Fernanda</td>
+            <td>DOIS</td>
+            <td>Napolitâno</td>
+            <td>R$ 45.00</td>
+            <td>R$ 90.00</td>
+            
+            
+        </tr>
+
+        <tr>
+            <td>Rafael</td>
+            <td>UM</td>
+            <td>Napolitâno</td>
+            <td>R$ 45.00</td>
+            <td>R$ 45.00</td>
+            
+        </tr>
+
+        <tr>
+            <td>Jennifer</td>
+            <td>CINCO</td>
+            <td>Chocolate (2) <br> Flocos(2) <br>Napolitâno(1)
+            </td>
+            <td>R$35.00(4) <br> R$45.00(1)</td>
+            <td>R$ 185.00</td>
+            
+        </tr>
+        
+    </table>
+
+    <div>
+        <input type="button" onclick="vendidos()" value=" Valor Feito no Dia">
+        <input type="button" onclick="quantidade_sorvete()" value="Sorvetes Vendidos">
+        <input type="button" onclick="choco()"
+        value=" Total de Sorvetes de Chocolate Vendidos">
+        
+        <input type="button" onclick="creme()" value=" Total de Sorvetes de creme Vendidos">
+        <input type="button" onclick="morango()" value=" Total de Sorvetes de Morango Vendidos">
+        <input type="button" onclick="napo()" value=" Total de Sorvetes de Napolitâno Vendidos">
+        <input type="button" onclick="floc()" value=" Total de Sorvetes de Floscos Vendidos">
+    </div>
+
+</html>
+
+</body>

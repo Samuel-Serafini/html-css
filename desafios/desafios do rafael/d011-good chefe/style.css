@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Fredericka+the+Great&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+* {
+
+    padding: 0%;
+    margin: 0px;
+    
+
+}
+
+body {
+    background: linear-gradient(90deg, #ff9c34 25%, transparent 26%, transparent 49%, #ff9c3480 50%, #ff9c3480 75%, transparent 76%);
+    background-size: 3em 3em;
+    background-color: #ffffff;
+    opacity: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    width: 100%;
+}
+
+.cabeçalho {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff9c34;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-shadow: 5px 5px 10px #7a4b19;
+    font-family: 'Dela Gothic One', cursive;
+    
+}
+
+.escolhas{
+    background-color: white;
+   text-align: center;
+   display: block;
+  justify-content: center;
+   align-items: center;
+   
+} 
+
+.escolhas img{
+    margin-left: 50px;
+    margin-right: 150px;
+    text-align: center;
+}
+
+.all {
+    background-color: white;
+    margin: 70px;
+    border-radius: 15px;
+}
+
+
+
+.introdução {
+    font-size: 17px;
+    padding: 30px;
+}
+
+.img-um {
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    padding: 30px;
+    text-align: start;
+}
+.p-top{
+    padding: 30px;
+    text-align: start;
+    font-size: 20px;
+}
+
+h3{
+    font-size: 20px;
+    padding: 30px;
+    text-align: start;
+}
+
+h4{
+    font-size: 20px;
+    padding-left: 30px;
+    text-align: start; 
+    color:rgb(161, 67, 0)  ;
+}
+
+ul{
+    font-size: 25px;
+    padding: 30px;
+    text-align: start;
+
+}
+
+ol{
+     font-size: 20px;
+    padding: 30px;
+    text-align: start;
+    
+}
+
+.dica{
+    font-size: 20px;
+    background-color: #ffbc79cd;
+    border-radius: 20px;
+}
+
+footer{
+    background-color: rgb(234, 231, 231);
+    height: 600;
+   
+    
+}
+
+.logo-footer{
+  
+   display: flex;
+    justify-content: center;
+    align-items: center;
+   font-family: 'Dela Gothic One', cursive;
+}
+
+.colunas{
+    display: flex; 
+    font-size: 5px;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.footer-principal{
+    font-family: 'Fredericka the Great',
+}
+
+.sem{
+    list-style: none; 
+    text-decoration: none;
+    color: rgb(61, 61, 61);
+}
+.botao-voltar{
+    padding-left: 50px;
+}
+.botao-voltar button{
+    font-size: 29px;
+    background-image: linear-gradient(to right,#fbc143,#E59F0B, #E05C00 );
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+}
+    .botao-voltar  button:hover{
+    color: white;
+    font-size: 27px;
+    background-image: linear-gradient(to top,#ffe19f,#ffae00, #ff6a00 );
+    
+}
+.trocar-foto{
+    width: 100px;
+    font-size: 20px;
+
+}
+.botao button{ 
+    border: 5px solid #7a4b19;
+    font-size: 20px;
+    background-color: rgb(184, 117, 2);
+    color: #220e00;
+    height: 50px; 
+    padding: 9px;
+}
+

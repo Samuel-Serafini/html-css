@@ -1,0 +1,750 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Great Vibes', cursive;
+    background-image: url(imagem/Captura\ de\ tela\ 2023-12-01\ 155125.png);
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.conteiner{
+    position: relative;
+}
+
+@keyframes titulo {
+
+    0%,
+    100% {
+        color: gold;
+        text-shadow: 3px 3px 10px black
+    }
+
+    40% {
+        color: green;
+        text-shadow: 3px 3px 10px black
+    }
+
+    80% {
+        color: #f17c6f;
+        text-shadow: 3px 3px 10px black
+    }
+}
+
+h1 {
+    position: relative;
+    background-color: #e74c3c;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    font-size: 55px;
+    padding: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    animation: titulo 6s infinite;
+}
+
+/* piscas do titulo */
+
+.piscas1{
+    position: absolute;
+    background-color: #ffea00;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 11vh;
+    animation: trocar-1 3s infinite;
+}
+
+.piscas2{
+    position: absolute;
+    background-color: #37ff00;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 11vh;
+    right: 25.1vh;
+    animation: trocar-2 3s   infinite  ;
+}
+ 
+.piscas3{
+    position: absolute;
+    background-color: #ff0000;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 11vh;
+    right: 22.2vh;
+    animation: trocar-3 3s   infinite;
+}
+ 
+.piscas4{
+    position: absolute;
+    background-color: #ffea00;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 11vh;
+    right: 19.3vh;
+    animation: trocar-1 3s infinite;
+}
+.piscas5{
+    position: absolute;
+    background-color: #1eff00;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 11vh;
+    right: 16.4vh;
+    animation: trocar-2 3s infinite;
+}
+.piscas6{
+    position: absolute;
+    background-color: #ff0000;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 11vh;
+    right: 13.5vh;
+    animation: trocar-3 3s   infinite;
+}
+.piscas7{
+    position: absolute;
+    background-color: rgb(255, 225, 0);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 11vh;
+    right: 10.6vh;
+    animation: trocar-1 3s infinite;
+}
+.piscas8{
+    position: absolute;
+    background-color: #1eff00;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 11vh;
+    right: 7.7vh;
+    animation: trocar-2 3s infinite;
+}
+.piscas9{
+    position: absolute;
+    background-color: #ff0000;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 11vh;
+    right: 4.8vh;
+    animation: trocar-3 3s   infinite;
+}
+.piscas10{
+    position: absolute;
+    background-color: rgb(246, 255, 0);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 11vh;
+    right: 1.9vh;
+    animation: trocar-1 3s infinite;
+}
+.piscas11{
+    position: absolute;
+    background-color: #37ff00;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 8.8vh;
+    right: -0.2vh;
+    animation: trocar-2 3s infinite;
+}
+.piscas12{
+    position: absolute;
+    background-color: #ff0000;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 6.3vh;
+    right: -1.5vh;
+    animation: trocar-3 3s   infinite;
+}
+.piscas13{
+    position: absolute;
+    background-color: #fbff00;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 3.5vh;
+    right: -1.5vh;
+    animation: trocar-1 3s infinite;
+}
+.piscas14{
+    position: absolute;
+    background-color: #84ff00;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 1vh;
+    right: -0.1vh;
+    animation: trocar-2 3s infinite;
+}
+.piscas15{
+    position: absolute;
+    background-color: #ff0000;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -1vh;
+    right: 1.9vh;
+    animation: trocar-3 3s   infinite;
+}
+ 
+.piscas16{
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -1.3vh;
+    animation: trocar-3 3s   infinite;
+
+}
+
+.piscas17{
+    position: absolute;
+    background-color: #37ff00;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -1.3vh;
+    right: 25.1vh;
+    animation: trocar-2 3s infinite;
+}
+ 
+.piscas18{
+    position: absolute;
+    background-color: #ffd900;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -1.3vh;
+    right: 22.2vh;
+    animation: trocar-1 3s infinite;
+}
+ 
+.piscas19{
+    position: absolute;
+    background-color: #ff0000;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -1.3vh;
+    right: 19.3vh;
+    animation: trocar-3 3s   infinite;
+}
+.piscas20{
+    position: absolute;
+    background-color: #1eff00;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -1.3vh;
+    right: 16.4vh;
+    animation: trocar-2 3s infinite;
+}
+.piscas21{
+    position: absolute;
+    background-color: #fff700;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -1.3vh;
+    right: 13.5vh;
+    animation: trocar-1 3s infinite;
+}
+.piscas22{
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -1.3vh;
+    right: 10.6vh;
+    animation: trocar-3 3s   infinite;
+}
+.piscas23{
+    position: absolute;
+    background-color: #1eff00;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -1.3vh;
+    right: 7.7vh;
+    animation: trocar-2 3s infinite;
+}
+.piscas24{
+    position: absolute;
+    background-color: #ffd900;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -1.3vh;
+    right: 4.8vh;
+    animation: trocar-1 3s infinite;
+}
+ 
+
+.piscas25{
+    position: absolute;
+    background-color: rgb(60, 255, 0);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 11vh;
+    left: 25.1vh;
+    animation: trocar-2 3s infinite;
+}
+ 
+.piscas26{
+    position: absolute;
+    background-color: #ff0000;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 11vh;
+    left: 22.2vh;
+    animation: trocar-3 3s   infinite;
+}
+ 
+.piscas27{
+    position: absolute;
+    background-color: #ffea00;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 11vh;
+    left: 19.3vh;
+    animation: trocar-1 3s infinite;
+}
+.piscas28{
+    position: absolute;
+    background-color: #1eff00;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 11vh;
+    left: 16.4vh;
+    animation: trocar-2 3s infinite;
+}
+.piscas29{
+    position: absolute;
+    background-color: #ff0000;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 11vh;
+    left: 13.5vh;
+    animation: trocar-3 3s   infinite;
+    
+}
+.piscas30{
+    position: absolute;
+    background-color: rgb(255, 225, 0);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 11vh;
+    left: 10.6vh;
+    animation: trocar-1 3s infinite;
+}
+.piscas31{
+    position: absolute;
+    background-color: rgb(81, 255, 0);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 11vh;
+    left: 7.7vh;
+    animation: trocar-2 3s infinite;
+}
+.piscas32{
+    position: absolute;
+    background-color: #ff0000;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 11vh;
+    left: 4.8vh;
+    animation: trocar-3 3s   infinite;
+}
+.piscas33{
+    position: absolute;
+    background-color: rgb(246, 255, 0);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 11vh;
+    left: 1.9vh;
+    animation: trocar-1 3s infinite;
+}
+.piscas34{
+    position: absolute;
+    background-color: #37ff00;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 8.8vh;
+    left: -0.2vh;
+    animation: trocar-2 3s infinite;
+}
+.piscas35{
+    position: absolute;
+    background-color: #ff0000;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 6.3vh;
+    left: -1.5vh;
+    animation: trocar-3 3s   infinite;
+}
+.piscas36{
+    position: absolute;
+    background-color: #fbff00;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 3.5vh;
+    left: -1.5vh;
+    animation: trocar-1 3s infinite;
+}
+.piscas37{
+    position: absolute;
+    background-color: #84ff00;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 1vh;
+    left: -0.1vh;
+    animation: trocar-2 3s infinite;
+}
+.piscas38{
+    position: absolute;
+    background-color: #ff0000;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -1vh;
+    left: 1.9vh;
+    animation: trocar-3 3s   infinite;
+}
+ 
+
+.piscas39{
+    position: absolute;
+    background-color: #37ff00;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -1.3vh;
+    left: 25.1vh;
+    animation: trocar-2 3s infinite;
+}
+ 
+.piscas40{
+    position: absolute;
+    background-color: #ffd900;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -1.3vh;
+    left: 22.2vh;
+    animation: trocar-1 3s infinite;
+}
+ 
+.piscas41{
+    position: absolute;
+    background-color: #ff0000;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -1.3vh;
+    left: 19.3vh;
+    animation: trocar-3 3s   infinite;
+}
+.piscas42{
+    position: absolute;
+    background-color: #1eff00;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -1.3vh;
+    left: 16.4vh;
+    animation: trocar-2 3s infinite;
+}
+.piscas43{
+    position: absolute;
+    background-color: #fff700;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -1.3vh;
+    left: 13.5vh;
+    animation: trocar-1 3s infinite;
+}
+.piscas44{
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -1.3vh;
+    left: 10.6vh;
+    animation: trocar-3 3s   infinite;
+}
+.piscas45{
+    position: absolute;
+    background-color: #1eff00;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -1.3vh;
+    left: 7.7vh;
+    animation: trocar-2 3s infinite;
+}
+.piscas46{
+    position: absolute;
+    background-color: #ffd900;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -1.3vh;
+    left: 4.8vh;  animation: trocar-1 3s infinite;
+}
+
+/* animaçao do titulo */
+
+@keyframes trocar-1 {
+    0%{
+        background-color: #fbff00;
+      
+    }
+  
+    50%{
+        background: #1eff00;
+    }
+
+    100%{
+        background-color: #e74c3c;
+    }
+}
+
+@keyframes trocar-2 {
+    
+    0%{
+        background-color: #51ff00;
+       
+    }
+  
+    50%{
+        background: #ff0000;
+    }
+
+    100%{
+        background-color: #e7d63c;
+    }
+}
+
+@keyframes trocar-3 {
+    0%{
+        background-color: #ff0000;
+        opacity:1;
+    }
+  
+    50%{
+        background: #fff200;
+    }
+
+    100%{
+        background-color: #7be73c;
+    }
+}
+
+/* animaçao do papai noel */
+@keyframes voar {
+    0% {
+        transform: translateX(100%);
+
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+
+}
+
+/* arvore e fundo */
+.picture {
+    animation: voar 15s infinite; 
+}
+
+.picture img{
+    position: absolute;
+}
+
+.box {
+position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.box-foto {
+    position: relative;
+    backdrop-filter: blur(8px);
+    background-color: #1b191923;
+    border-radius: 20px;
+    width: 500px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+/* botao */
+button {
+    border: none;
+    background: gold;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding: 5px;
+    font-size: 25px;
+    margin-bottom: 15px;
+    width: 200px;
+
+}
+
+.functions {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* luzes da arvore */
+.luz1 {
+    background-color: rgb(255, 217, 0);
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 0.9%;
+    left: 46%;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    border-radius: 50%;
+    animation: estrela-brl 3s  infinite  ;
+
+}
+
+.luz2 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #e74c3c;
+    top: 19%;
+    left: 42%;
+    animation: luzes 9s  infinite  ;
+}
+
+.luz3 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(80, 140, 6);
+    top: 29%;
+    right: 41%;
+    animation: luzes 7s 3s infinite  ;
+}
+
+.luz4 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #ffea00;
+    top: 42%;
+    left: 38%;
+    animation: luzes 2s  infinite  ;
+}
+
+.luz5 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #e74c3c;
+    top: 55%;
+    right: 39%;
+    animation: luzes 5s  infinite  ;
+}
+
+.luz6 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(80, 140, 6);
+    top: 70.5%;
+    left: 33.5%;
+    animation: luzes 8s  infinite  ;
+}
+
+.luz7 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #ffea00;
+    top: 70.5%;
+    right: 33.5%;
+    animation: luzes 12s  infinite  ;
+}
+
+/* animaçao da arvore */
+
+@keyframes luzes {
+    0%{
+        background-color: #e7d63c;
+    }
+
+    50%{
+        background-color: #7be73c;
+    }
+
+    100%{
+        background-color: #e74c3c;
+    }
+}
+
+@keyframes estrela-brl {
+    0%,50%,100%{
+        border: 20px solid rgb(255, 221, 0);
+    }
+
+    25%,75%{
+        border: 15px solid rgb(247, 240, 146);
+    }
+
+}
