@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Android';
-    src: url(/fontes/idroid.otf);
+    src: url(../fontes/idroid.otf);
 }
 
 :root {
