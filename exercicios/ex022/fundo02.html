@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personalização de fundos</title>
+    <style>
+        body{
+            background-image: url('imagens/wallpaper006.jpg');
+            background-size: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ff0000;
+            font-size: 20px;
+            text-align: center;
+           
+        }
+
+        div{
+            display: flex;
+            border-radius: 10px;
+            border: 2px solid black;
+            width: 300px;
+            height: 300px;
+            margin: 6px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #um{
+            background-image: url('imagens/pattern001.png');
+            background-repeat: repeat;
+        }
+        #dois{
+            background-image: url('imagens/pattern001.png');
+            background-repeat: no-repeat;
+        }
+        
+        #tres{
+            background-image: url('imagens/pattern001.png');
+            background-repeat: repeat-x;
+        }
+
+        #quatro{
+            background-image: url('imagens/pattern001.png');
+            background-repeat: repeat-y;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1>tipos de background-repeat</h1>
+    <div id="um"> <p></p>repeat</div>
+    <div id="dois"><p></p>no-repeat</div>
+    <div id="tres"><p></p>repeat-x</div>
+    <div id="quatro"><p>repeat-y</p></div>
+</body>
+</html>
