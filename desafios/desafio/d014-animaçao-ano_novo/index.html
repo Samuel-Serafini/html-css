@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024</title>
+    <style>
+        body{
+            margin: 0%;
+        }
+        
+        .conteiner{
+            height: 100vh;
+            position: relative;
+            background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 0, 73));
+            overflow: hidden;
+        }
+        
+        .fogos,.fogos1,.fogos2,.fogos3,.fogos4,.fogos5,.fogos6{
+            position: absolute;
+            top: 50% ;
+            left: 50%;
+            background-image: radial-gradient( yellow, black), 
+            radial-gradient(rgb(255, 0, 0), rgb(0, 0, 0)),
+            radial-gradient(rgb(130, 0, 236), rgb(0, 0, 0)),
+            radial-gradient(rgb(198, 1, 155), rgb(0, 0, 0)),
+            radial-gradient(rgb(0, 242, 255), rgb(0, 0, 0)),
+            radial-gradient(rgb(0, 255, 119), rgb(0, 0, 0)),
+            radial-gradient(rgb(255, 162, 0), rgb(0, 0, 0)),
+            radial-gradient(rgb(0, 217, 255), rgb(0, 0, 0)),
+            radial-gradient(rgb(167, 167, 243), rgb(0, 0, 0)),
+            radial-gradient(rgb(216, 141, 44), rgb(0, 0, 0)),
+            radial-gradient(rgb(136, 3, 131), rgb(0, 0, 0)),
+            radial-gradient(rgb(43, 141, 71), rgb(0, 0, 0)),
+            radial-gradient(rgb(61, 0, 65), rgb(0, 0, 0)),
+            radial-gradient(rgb(255, 216, 99), rgb(0, 0, 0));
+            height: 15px;
+            width: 15px;
+            background-size: 10px 10px;
+            background-repeat: no-repeat;
+            background-position: 30% 90%, 40% 10%,90% 35%, 50% 50%, 25% 25%, 65% 90%, 15% 45%,
+             76% 4%, 4% 1%,1% 35%, 0.9% 90%, 2% 69%, 100% 90%, 100% 60%;
+        
+             animation: explode 5s infinite;
+        }
+        
+        @keyframes explode{
+            0%{
+                transform: translateY(100vh);
+            }
+        
+            50%{
+                opacity: 1;
+                width: 10px;
+                height: 10px;
+            }
+        
+            85%{
+                opacity: 1;
+                width: 10px;
+                height: 10px;
+            }
+        
+            100%{
+                width: 250px;
+                height: 250px;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+
+    <div class="fogos"></div>
+    <div class="fogos1"></div>
+    <div class="fogos2"></div>
+    <div class="fogos3"></div>
+    <div class="fogos4"></div>
+    <div class="fogos5"></div>
+    <div class="fogos6"></div>
+    
+    </div>
+</body>
+</html>
