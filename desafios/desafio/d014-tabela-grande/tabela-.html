@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Estoque</title>
+
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            background-color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            padding-top: 50px;
+            text-align: center;
+            font-size: 3em;
+        }
+
+        span {
+            background-color: aquamarine;
+            padding: 20px 50px 20px 50px;
+            border-radius: 45px 8px 25px 8px;
+            animation: borda 5s infinite;
+        }
+
+        @keyframes borda {
+
+            0%,
+            100% {
+                border: 5px solid rgb(3, 3, 198);
+            }
+
+            45% {
+                border: 5px solid greenyellow;
+            }
+
+            75% {
+                border: 5px solid red;
+            }
+        }
+
+        .botoes{
+            display: flex;
+           flex-direction: row;
+        }
+
+        button{
+            background:none;
+            border: none;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px 5px 10px 5px;
+            font-size: .9em;
+            text-align: center;
+            margin: 78px 7px 50px 7px;
+          
+        }
+
+        #um{
+            background-color: #a8e1f7;
+            margin-left: 80px;
+        }
+
+        #dois{
+            background-color: #7700ab;
+        }
+
+        #tres{
+            background-color: #00FFFF;
+        }
+
+        #quatro{
+            background-color:#98FB98;
+        }
+
+        #cinco{
+            background-color: #0202b4;
+        }
+
+        #seis{
+            background-color: #B0C4DE;
+        }
+
+        #total{
+            background-color: rgb(244, 62, 62);
+        }
+
+        
+
+        caption {
+            background-color: rgb(163, 160, 160);
+            color: #fff;
+            padding: 8px;
+            font-size: 1.2em;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        table {
+            border-collapse: collapse;
+            font-size: 1.3em;
+            margin: auto;
+            background-color: #fff;
+            position: relative;
+        }
+
+        thead {
+            position: sticky;
+            top: -1px;
+        }
+
+        td,
+        th {
+            border: 2px solid black;
+            padding: 15px;
+        }
+
+        .tt {
+            background-color: rgb(99, 99, 99);
+            color: #fff;
+        }
+
+        .azul {
+            background-color: #a8e1f7;
+        }
+
+        .azul-p {
+            background-color: #7700ab;
+        }
+
+        .verde-a {
+            background-color: #00FFFF;
+        }
+
+        .verde-m {
+            background-color: #98FB98;
+        }
+
+        .azul-m {
+            background-color: #0202b4;
+        }
+
+        .cinza {
+            background-color: #B0C4DE;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1><span>Estoque</span></h1>
+
+    <div class="botoes">
+        <button id="um" onclick="cum()" >Valor Total da Cor Azul claro</button>
+        <button id="dois" onclick="cdois()" >Valor Total da Cor Roxo</button>
+        <button id="tres" onclick="ctres()" >Valor Total da Cor Ciano</button>
+        <button id="quatro" onclick="cquatro()" >Valor Total da Cor Verde</button>
+        <button id="cinco" onclick="ccinco()" >Valor Total da Cor Azul Forte</button>
+        <button id="seis" onclick="cseis()" >Valor Total da Cor Cinza</button>
+        <button id="total" onclick="ct()" >Valor Total das Cores </button>
+    </div>
+    
+    <div class="conteiner">
+        <table>
+            <caption>Valores Dos Itens</caption>
+            <thead>
+                <tr class="tt">
+                    <th scope="col">Mercado</th>
+                    <th scope="col">Padaria</th>
+                    <th scope="col">Farmácia</th>
+                    <th scope="col">Roupas</th>
+                    <th scope="col">Sapatos</th>
+                    <th scope="col">Fraldas</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="azul">
+                    <td>R$ 20,57 </td>
+                    <td>R$ 20,42</td>
+                    <td>R$ 20,99</td>
+                    <td>R$ 20,32</td>
+                    <td>R$ 20,85</td>
+                    <td>R$ 20,23 </td>
+                </tr>
+
+                <tr class="azul">
+                    <td>R$ 22,11</td>
+                    <td>R$ 22,88</td>
+                    <td>R$ 22,29</td>
+                    <td>R$ 23,75</td>
+                    <td>R$ 23,10</td>
+                    <td>R$ 23,47</td>
+                </tr>
+
+                <tr class="azul">
+                    <td>R$ 24,94</td>
+                    <td>R$ 24,63</td>
+                    <td>R$ 24,68</td>
+                    <td>R$ 26,33</td>
+                    <td>R$ 26,84</td>
+                    <td>R$ 24,05</td>
+                </tr>
+
+                <tr class="azul">
+                    <td>R$ 26,27</td>
+                    <td>R$ 27,77</td>
+                    <td>R$ 26,51</td>
+                    <td>R$ 27,39</td>
+                    <td>R$ 28,20</td>
+                    <td>R$ 26,84</td>
+                </tr>
+
+                <tr class="azul">
+                    <td>R$ 27,58</td>
+                    <td>R$ 29,31</td>
+                    <td>R$ 28,72</td>
+                    <td>R$ 29,45</td>
+                    <td>R$ 29,88</td>
+                    <td>R$ 29,63</td>
+                </tr>
+
+                <tr class=" azul-p">
+                    <td>R$ 29,95</td>
+                    <td>R$ 30,50</td>
+                    <td>R$ 29,80</td>
+                    <td>R$ 30,77</td>
+                    <td>R$ 31,23</td>
+                    <td>R$ 30,45</td>
+                </tr>
+
+                <tr class=" azul-p">
+                    <td>R$ 29,95</td>
+                    <td>R$ 30,45</td>
+                    <td>R$ 31,23</td>
+                    <td>R$ 30,11</td>
+                    <td>R$ 31,69</td>
+                    <td>R$ 31,92</td>
+
+                </tr>
+
+                <tr class=" azul-p">
+                    <td>R$ 29,95</td>
+                    <td>R$ 31,44</td>
+                    <td>R$ 33,14</td>
+                    <td>R$ 31,79</td>
+                    <td>R$ 32,02</td>
+                    <td>R$ 32,23</td>
+
+                </tr>
+
+                <tr class=" azul-p">
+                    <td>R$ 29,95</td>
+                    <td>R$ 32,67</td>
+                    <td>R$ 34,94</td>
+                    <td>R$ 32,26</td>
+                    <td>R$ 33,38</td>
+                    <td>R$ 33,57</td>
+
+                </tr>
+
+                <tr class=" azul-p">
+                    <td>R$ 29,95</td>
+                    <td>R$ 33,80</td>
+                    <td>R$ 35,28</td>
+                    <td>R$ 33,42</td>
+                    <td>R$ 34,05</td>
+                    <td>R$ 34,34</td>
+
+                </tr>
+
+                <tr class=" azul-p">
+                    <td>R$ 29,95</td>
+                    <td>R$ 34,42</td>
+                    <td>R$ 36,75</td>
+                    <td>R$ 34,61</td>
+                    <td>R$ 35,17</td>
+                    <td>R$ 35,47</td>
+
+                </tr>
+
+                <tr class=" azul-p">
+                    <td>R$ 29,95</td>
+                    <td>R$ R$ 35,84</td>
+                    <td>R$ 37,26</td>
+                    <td>R$ 35,78</td>
+                    <td>R$ 36,02</td>
+                    <td>R$ 36,75</td>
+
+                </tr>
+
+                <tr class=" azul-p">
+                    <td>R$ 29,95</td>
+                    <td>R$ 36,72</td>
+                    <td>R$ 38,56</td>
+                    <td>R$ 36,25</td>
+                    <td>R$ 37,10</td>
+                    <td>R$ 37,23</td>
+                </tr>
+
+                <tr class=" azul-p">
+                    <td>R$ 29,95</td>
+                    <td>R$ 37,65</td>
+                    <td>R$ 40,22</td>
+                    <td>R$ 37,36</td>
+                    <td>R$ 38,38</td>
+                    <td>R$ 38,48</td>
+
+                </tr>
+
+                <tr class=" verde-a">
+                    <td>R$ 29,95</td>
+                    <td>R$ 40,26</td>
+                    <td>R$ 41,04</td>
+                    <td>R$ 38,27</td>
+                    <td>R$ 40,02</td>
+                    <td>R$ 40,42</td>
+
+                </tr>
+
+                <tr class=" verde-a">
+                    <td>R$ 40,21</td>
+                    <td>R$ 42,18</td>
+                    <td>R$ 40,67</td>
+                    <td>R$ 41,38</td>
+                    <td>R$ 41,57</td>
+                    <td>R$ 41,21</td>
+                </tr>
+
+                <tr class=" verde-a">
+                    <td>R$ 41,67</td>
+                    <td>R$ 43,29</td>
+                    <td>R$ 42,96</td>
+                    <td>R$ 42,74</td>
+                    <td>R$ 42,98</td>
+                    <td>R$ 42,44</td>
+                </tr>
+
+                <tr class=" verde-a">
+                    <td>R$ 43,41</td>
+                    <td>R$ 45,03</td>
+                    <td>R$ 43,38</td>
+                    <td>R$ 43,36</td>
+                    <td>R$ 43,22</td>
+                    <td>R$ 43,80</td>
+                </tr>
+
+                <tr class=" verde-a">
+                    <td>R$ 43,92</td>
+                    <td>R$ 45,87</td>
+                    <td>R$ 43,92</td>
+                    <td>R$ 44,58</td>
+                    <td>R$ 44,65</td>
+                    <td>R$ 44,62</td>
+                </tr>
+                <tr class=" verde-a">
+                    <td>R$ 44,57</td>
+                    <td>R$ 47,42</td>
+                    <td>R$ 44,79</td>
+                    <td>R$ 45,65</td>
+                    <td>R$ 45,89</td>
+                    <td>R$ 45,91</td>
+                </tr>
+
+                <tr class=" verde-a">
+                    <td>R$ 45,47</td>
+                    <td>R$ 48,20</td>
+                    <td>R$ 45,98</td>
+                    <td>R$ 47,12</td>
+                    <td>R$ 47,12</td>
+                    <td>R$ 47,00</td>
+                </tr>
+                <tr class=" verde-a">
+                    <td>R$ 46,78</td>
+                    <td>R$ 49,39</td>
+                    <td>R$ 46,18</td>
+                    <td>R$ 48,27</td>
+                    <td>R$ 48,15</td>
+                    <td>R$ 48,48</td>
+                </tr>
+
+                <tr class=" verde-m">
+                    <td>R$ 50,65</td>
+                    <td>R$ 50,68</td>
+                    <td>R$ 47,14</td>
+                    <td>R$ 49,12</td>
+                    <td>R$ 49,33</td>
+                    <td>R$ 49,19</td>
+                </tr>
+                <tr class=" verde-m">
+                    <td>R$ 48,42</td>
+                    <td>R$ 52,04</td>
+                    <td>R$ 48,20</td>
+                    <td>R$ 50,45</td>
+                    <td>R$ 50,49</td>
+                    <td>R$ 50,23</td>
+                </tr>
+                <tr class=" verde-m">
+                    <td>R$ 49,43</td>
+                    <td>R$ 53,09</td>
+                    <td>R$ 49,07</td>
+                    <td>R$ 52,00</td>
+                    <td>R$ 52,08</td>
+                    <td>R$ 51,98</td>
+                </tr>
+                <tr class=" verde-m">
+                    <td>R$ 50,01</td>
+                    <td>R$ 54,87</td>
+                    <td>R$ 50,18</td>
+                    <td>R$ 53,46</td>
+                    <td>R$ 53,56 </td>
+                    <td>R$ 52,56</td>
+                </tr>
+                <tr class=" verde-m">
+                    <td>R$ 51,65</td>
+                    <td>R$ 55,16</td>
+                    <td>R$ 51,19</td>
+                    <td>R$ 54,23</td>
+                    <td>R$ 54,24</td>
+                    <td>R$ 53,97</td>
+                </tr>
+                <tr class=" verde-m">
+                    <td>R$ 52,42</td>
+                    <td>R$ 56,43</td>
+                    <td>R$ 52,35</td>
+                    <td>R$ 52,35</td>
+                    <td>R$ 55,40</td>
+                    <td>R$ 55,04</td>
+                </tr>
+                <tr class=" verde-m">
+                    <td>R$ 53,62</td>
+                    <td>R$ 57,42</td>
+                    <td>R$ 53,00</td>
+                    <td>R$ 56,13</td>
+                    <td>R$ 56,11</td>
+                    <td>R$ 56,43</td>
+                </tr>
+
+                <tr class=" verde-m">
+                    <td>R$ 54,65</td>
+                    <td>R$ 58,68</td>
+                    <td>R$ 54,39</td>
+                    <td>R$ 57,05</td>
+                    <td>R$ 57,32</td>
+                    <td>R 57,26</td>
+                </tr>
+
+                <tr class=" verde-m">
+                    <td>R$ 55,54</td>
+                    <td>R$ 59,46</td>
+                    <td>R$ 55,47</td>
+                    <td>R$ 58,09</td>
+                    <td>R$ 58,08</td>
+                    <td>R$ 58,08</td>
+                </tr>
+                <tr class=" verde-m">
+                    <td>R$ 56,24</td>
+                    <td>R$ 60,13</td>
+                    <td>R$ 56,15 </td>
+                    <td>R$ 59,14</td>
+                    <td>R$ 59,08</td>
+                    <td>R$ 59,01</td>
+                </tr>
+                <tr class=" azul-m">
+                    <td>R$ 57,04</td>
+                    <td>R$ 61,03</td>
+                    <td>R$ 57,55</td>
+                    <td>R$ 60,00</td>
+                    <td>R$ 60,85</td>
+                    <td>R$ 60,24</td>
+                </tr>
+                <tr class=" azul-m">
+                    <td>R$ 58,31</td>
+                    <td>R$ 62,44</td>
+                    <td>R$ 58,33</td>
+                    <td>R$ 61,36</td>
+                    <td>R$ 61,65</td>
+                    <td>R$ 61,79</td>
+                </tr>
+                <tr class=" azul-m">
+                    <td>R$ 59,89</td>
+                    <td>R$ 63,88</td>
+                    <td>R$ 59,55</td>
+                    <td>R$ 63,82</td>
+                    <td>R$ 62,99</td>
+                    <td>R$ 63,66</td>
+                </tr>
+                <tr class=" azul-m">
+                    <td>R$ 60,99</td>
+                    <td>R$ 64,77</td>
+                    <td>R$ 60,89</td>
+                    <td>R$ 64,67</td>
+                    <td>R$ 63,79</td>
+                    <td>R$ 64,35</td>
+                </tr>
+                <tr class="azul-m">
+                    <td>R$ 64,99</td>
+                    <td>R$ 65,35</td>
+                    <td>R$ 65,55</td>
+                    <td>R$ 67,45</td>
+                    <td>R$ 67,55</td>
+                    <td>R$ 68,10</td>
+                </tr>
+                <tr class=" azul-m">
+                    <td>R$ 68,15</td>
+                    <td>R$ 68,45</td>
+                    <td>R$ 69,89</td>
+                    <td>R$ 70,45</td>
+                    <td>R$ 70,87</td>
+                    <td>R$ 71,99</td>
+                </tr>
+                <tr class=" azul-m">
+                    <td>R$ 72,25</td>
+                    <td>R$ 72,65</td>
+                    <td>R$ 73,89</td>
+                    <td>R$ 74,25</td>
+                    <td>R$ 74,76</td>
+                    <td>R$ 75,99</td>
+                </tr>
+
+                <tr class=" azul-m">
+                    <td>R$ 76,78</td>
+                    <td>R$ 76,34</td>
+                    <td>R$ 77,85</td>
+                    <td>R$ 78,10</td>
+                    <td>R$ 78,86</td>
+                    <td>R$ 79,99</td>
+                </tr>
+
+                <tr class=" cinza">
+                    <td>R$ 80,00</td>
+                    <td>R$ 82,75</td>
+                    <td>R$ 81,99</td>
+                    <td>R$ 82,20</td>
+                    <td>R$ 83,00</td>
+                    <td>R$ 83,35</td>
+                </tr>
+                <tr class=" cinza">
+                    <td>R$ 84,99</td>
+                    <td>R$ 85,55</td>
+                    <td>R$ 85,77</td>
+                    <td>R$ 85,20</td>
+                    <td>R$ 86,99</td>
+                    <td>R$ 87,45</td>
+                </tr>
+                <tr class=" cinza">
+                    <td>R$ 87,99</td>
+                    <td>R$ 88,20</td>
+                    <td>R$ 88,90</td>
+                    <td>R$ 89,40</td>
+                    <td>R$ 89,98</td>
+                    <td>R$ 90,00</td>
+                </tr>
+                <tr class=" cinza">
+                    <td>R$ 90,55</td>
+                    <td>R$ 90,89</td>
+                    <td>R$ 91,67</td>
+                    <td>R$ 91,98</td>
+                    <td>R$ 92,99</td>
+                    <td>R$ 93,32</td>
+                </tr>
+                <tr class=" cinza">
+                    <td>R$ 93,75</td>
+                    <td>R$ 93,97</td>
+                    <td>R$ 94,10</td>
+                    <td>R$ 95,99</td>
+                    <td>R$ 96,88</td>
+                    <td>R$ 97,99,45</td>
+                </tr>
+                <tr class=" cinza">
+                    <td>R$ 98,47</td>
+                    <td>R$ 98,98</td>
+                    <td>R$ 99,99</td>
+                    <td>R$ 100,00</td>
+                    <td>R$ 100,76</td>
+                    <td>R$ 101,36</td>
+                </tr>
+                <tr class=" cinza">
+                    <td>R$ 101,77</td>
+                    <td>R$ 102,55</td>
+                    <td>R$ 102,87</td>
+                    <td>R$ 103,95</td>
+                    <td>R$ 104,76</td>
+                    <td>R$104,89</td>
+                </tr>
+                <tr class=" cinza">
+                    <td>R$ 105,10</td>
+                    <td>R$ 105,55</td>
+                    <td>R$ 105,69</td>
+                    <td>R$ 106,89</td>
+                    <td>R$ 106,99</td>
+                    <td>R$ 107,75</td>
+                </tr>
+                <tr class=" cinza">
+                    <td>R$ 107,98</td>
+                    <td>R$ 108,05</td>
+                    <td>R$ 108,47</td>
+                    <td>R$ 108,99</td>
+                    <td>R$ 109,23</td>
+                    <td>R$ 109,55R$ </td>
+                </tr>
+
+                <tr class=" cinza">
+                    <td>R$ 109,67</td>
+                    <td>R$ 111,20</td>
+                    <td>R$ 112,99</td>
+                    <td>R$ 113,85</td>
+                    <td>R$ 113,99</td>
+                    <td>R$ 115,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <script>
+        
+var cor1 = 20.57 + 20.42 + 20.99 + 20.32 + 20.85+ 20.23 + 22.11 + 22.88 + 22.29 + 23.75 + 23.10 + 23.47 + 24.94 + 24.63 + 24.68 + 26.33 + 26.84 + 24.05 + 26.27 + 27.77 + 26.51 + 27.39 + 28.20 + 26.84 + 27.58 + 29.31 + 28.72 + 29.45 + 29.88 + 29.63;
+
+var cor2 = 29.95 + 30.50 + 29.80 + 30.77 + 31.23 + 30.45 + 29.95 + 30.45 + 31.23 + 30.11 + 31.69 + 31.92 + 29.95 + 31.44 + 33.14 + 31.79 + 32.02 + 32.23 + 29.95 + 32.67 + 34.94 + 32.26 + 33.38 + 33.57 + 29.95 + 33.80 + 35.28 + 33.42 + 34.05 + 34.34 + 29.95 + 34.42 + 36.75 + 34.61 + 35.17 + 35.47 + 29.95 + 35.84 + 37.26 + 35.78 + 36.02 + 36.75 + 29.95 + 36.72 + 38.56 + 36.25 + 37.10 + 37.23 + 29.95 + 37.65 + 40.22 + 37.36 + 38.38 + 38.48;
+
+var cor3 =  29.95 + 40.26 + 41.04 + 38.27 + 40.02 + 40.42 + 40.21 + 42.18 + 40.67 + 41.38 + 41.57 + 41.21 + 41.67 + 43.29 + 42.96 + 42.74 + 42.98 + 42.44 + 43.41 + 45.03 + 43.38 + 43.36 + 43.22 + 43.80 + 43.92 + 45.87 + 43.92 + 44.58 + 44.65 + 44.62 + 44.57 + 47.42 + 44.79 + 45.65 + 45.89 + 45.91 + 45.47 + 48.20 + 45.98 + 47.12 + 47.12 + 47.00 + 46.78 + 49.39 + 46.18 + 48.27 + 48.15 + 48.48 ;
+
+var cor4 = 50.65	+ 50.68	+ 47.14	+ 49.12	+ 49.33	+ 49.19 + 48.42	+ 52.04	+ 48.20	+ 50.45	+ 50.49	+ 50.23 + 49.43	+ 53.09	+ 49.07	+ 52.00	+ 52.08	+ 51.98 + 50.01	+ 54.87	+ 50.18	+ 53.46	+ 53.56	+ 52.56 + 51.65	+ 55.16	+ 51.19	+ 54.23	+ 54.24	+ 53.97 + 52.42	+ 56.43	+ 52.35	+ 52.35	+ 55.40	+ 55.04 + 53.62	+ 57.42	+ 53.00	+ 56.13	+ 56.11	+ 56.43 + 54.65	+ 58.68	+ 54.39	+ 57.05	+ 57.32	+ 57.26 + 55.54	+ 59.46	+ 55.47	+ 58.09	+ 58.08	+ 58.08 + 56.24	+ 60.13	+ 56.15	+ 59.14	+ 59.08	+ 59.01;
+
+var cor5 = 57.04	+ 61.03	+ 57.55	+ 60.00	+ 60.85	+ 60.24 + 58.31	+ 62.44	+ 58.33	+ 61.36	+ 61.65	+ 61.79 + 59.89	+ 63.88	+ 59.55	+ 63.82	+ 62.99	+ 63.66 + 60.99	+ 64.77	+ 60.89	+ 64.67	+ 63.79	+ 64.35 + 64.99	+ 65.35	+ 65.55	+ 67.45	+ 67.55	+ 68.10 + 68.15	+ 68.45	+ 69.89	+ 70.45	+ 70.87	+ 71.99 + 72.25	+ 72.65	+ 73.89	+ 74.25	+ 74.76	+ 75.99 + 76.78	+ 76.34	+ 77.85	+ 78.10	+ 78.86	+ 79.99;
+
+var cor6 = 80.00	+ 82.75	+ 81.99	+ 82.20	+ 83.00	+ 83.35 + 84.99	+ 85.55	+ 85.77	+ 85.20	+ 86.99	+ 87.45 + 87.99	+ 88.20	+ 88.90	+ 89.40	+ 89.98	+ 90.00 + 90.55	+ 90.89	+ 91.67	+ 91.98	+ 92.99	+ 93.32 + 93.75	+ 93.97	+ 94.10	+ 95.99	+ 96.88	+ 97.99 + 98.47	+ 98.98	+ 99.99	+ 100.00 + 100.76 + 101.36 + 101.77 + 102.55 + 102.87 + 103.95	+ 104.76 + 104.89 + 105.10 + 105.55 + 105.69 + 106.89	+ 106.99 + 107.75 + 107.98 + 108.05 + 108.47 + 108.99	+ 109.23 + 109.55 + 109.67 + 111.20 + 112.99 + 113.85	+ 113.99 + 115.00;
+
+var cor_t = cor1 + cor2 + cor3 + cor4 + cor5 + cor6 ;
+
+
+function cum() {
+   alert(cor1);
+}
+
+function cdois() {
+   alert(cor2);
+}
+
+function ctres() {
+   alert(cor3);
+}
+
+function cquatro() {
+   alert(cor4);
+}
+
+function ccinco() {
+   alert(cor5);
+}
+
+function cseis() {
+   alert(cor6);
+}
+
+function ct() {
+   alert(cor_t);
+}
+
+
+    </script>
+</body>
+
+</html>
