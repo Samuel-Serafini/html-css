@@ -1,0 +1,7 @@
+  /* em pé */
+
+  body{
+    background:#233eff url('../imagem/cev-portrait.jpg');
+    background-size: cover;
+    background-position: center bottom;
+  }

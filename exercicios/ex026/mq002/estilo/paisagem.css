@@ -1,0 +1,7 @@
+/* deitado */
+
+body{ 
+    background:#233eff url('../imagem/cev-landscape.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;background-position: left bottom;
+}
