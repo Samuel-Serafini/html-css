@@ -1,0 +1,155 @@
+/* todas as demais mídias */
+
+/* Typical Device Breekpoints 
+pequenas telas = até 600px
+mobile= 600px - 768px
+tablet=  769px - 992px
+desktop=  993px - 1200px
+grandes telas= acima de 1201px
+
+
+*/
+
+@media print {
+
+    body {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        border: 2px solid black;
+
+    }
+
+    main h1 {
+        color: black;
+        text-shadow: none;
+    }
+    
+    .celular {
+        display: none;
+    }
+    
+    .tablet {
+        display: none;
+    }
+    
+    .print {
+        display: block;
+    }
+    
+    .pc {
+        display: none;
+    }
+    
+    .tv {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    body {
+        background-image: url('../imagem/back-tablet.jpg');
+    }
+
+    main{
+        width: 400px;
+        height: 250px;
+    }
+
+    img{
+        width: 200px;
+    }
+
+    .celular {
+        display: none;
+    }
+
+    .tablet {
+        display: block;
+    }
+
+    .print {
+        display: none;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .tv {
+        display: none;
+    }
+}
+
+@media screen and (min-width:993px) and (max-width:1200px) {
+    body {
+        background-image: url('../imagem/back-pc.jpg');
+    }
+
+    main{
+        width: 500px;
+        height: 300px;
+    }
+
+    img{
+        width: 250px;
+    }
+
+    .celular {
+        display: none;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    .print {
+        display: none;
+    }
+
+    .pc {
+        display: block;
+    }
+
+    .tv {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1201px) {
+    body {
+        background-image: url('../imagem/back-tv.jpg');
+        font-size: 1.5em;
+    }
+
+    main{
+        width: 700px;
+        height: 350px;
+    }
+
+    img{
+        width: 300px;
+    }
+
+    .celular {
+        display: none;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    .print {
+        display: none;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .tv {
+        display: block;
+    }
+}
