@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/midias.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+
+            </div>
+
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja Bem-Vindo(a) novamente. Faça Login para Acessar sua Conta e Poder Fazer as Configurações no seu
+                    Ambiente.</p><br>
+
+                <form action="login.php" method="post" autocomplete="on">
+
+                    <div class="campo">
+
+                        <span class="material-symbols-outlined">person</span>
+
+                        <input type="email" name="nome" id="nome" required placeholder="Seu E-mail" autocomplete="email" maxlength="30">
+
+                        <label for="nome">Login</label>
+                    
+                    </div>
+
+                    <div class="campo">
+
+                        <span class="material-symbols-outlined">vpn_key</span>
+
+                        <input type="password" name="senha" id="senha" required placeholder="Sua Senha" autocomplete="current-password" maxlength="20" minlength="8">
+
+                        <label for="senha">Senha</label>
+
+                    </div>
+                    
+                    <input type="submit" value="Enviar" class="botao-en">
+                    <a href="esqueci.html" class="botao-e">Esqueci a senha <span class="material-symbols-outlined">mail</span></a>
+
+                </form>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>

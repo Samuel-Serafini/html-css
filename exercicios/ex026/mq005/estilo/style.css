@@ -1,76 +1,75 @@
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+    }
 
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
-}
+    body {
+        background-color: #D6F8D6;
+    }
 
-body{
-    background-color:#D6F8D6;
-}
-
-header{
-    background-color: gray;
-}
+    header {
+        background-color: gray;
+    }
 
 
-#menu{ 
-    text-align: center;
-    color: #fff;
-    background-color: rgb(32, 32, 32);
-    padding: 10px;
-    display:block;
-}
+    #menu {
+        text-align: center;
+        color: #fff;
+        background-color: rgb(32, 32, 32);
+        padding: 10px;
+        display: block;
+    }
 
-#menu:hover{
-    background-color: rgb(255, 255, 255);
-    color: black;
-}
+    #menu:hover {
+        background-color: rgb(255, 255, 255);
+        color: black;
+    }
 
-header > h1{
-    padding: 15px;
-    text-align: center;
-}
+    header>h1 {
+        padding: 15px;
+        text-align: center;
+    }
 
-nav{
-    display: block;
-}
+    nav {
+        display: none;
+    }
 
-ul{
-    list-style-type: none;
-}
+    ul {
+        list-style-type: none;
+    }
 
-nav  a{
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    background-color: rgb(70, 70, 70);
-    text-align: center;
-    border: 1px solid rgb(142, 141, 141);
-    transition: .3s;
-    color: #fff;
-}
+    nav a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        background-color: rgb(70, 70, 70);
+        text-align: center;
+        border: 1px solid rgb(142, 141, 141);
+        transition: .3s;
+        color: #fff;
+    }
 
-nav a:hover{
-background-color: rgb(38, 34, 34);
-}
+    nav a:hover {
+        background-color: rgb(38, 34, 34);
+    }
 
-main{
-    width: 90vw;
-    background-color: white;
-    margin: auto;
-    margin-top: 15px;
-    padding: 10px;
-    border-radius: 10px;
-}
+    main {
+        width: 90vw;
+        background-color: white;
+        margin: auto;
+        margin-top: 15px;
+        padding: 10px;
+        border-radius: 10px;
+    }
 
-article > h2{
-    padding-bottom: 20px;
-}
+    article>h2 {
+        padding-bottom: 20px;
+    }
 
-article > p{
-    text-align: center;
-    margin-bottom:10px ;
-    text-indent: 10px;
-}
+    article>p {
+        text-align: center;
+        margin-bottom: 10px;
+        text-indent: 10px;
+    }
